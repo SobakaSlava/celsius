@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs/dist/tf.min.js"> </script>
+  <link rel="stylesheet" href="style/styles.css">
+  <title>Celsius example</title>
+</head>
+
+<body>
+<div class="main" id="main">
+    <label class="input-wrapper">
+      Celsius:
+      <input
+        type="text"
+        id="celsiusInput"
+      >
+      <button onclick="onNumberButtonPress(100)">100</button>
+    </label>
+  <label class="input-wrapper">
+    Fahrenheit:
+    <input
+      type="text"
+      disabled
+      id="fahrenheitInput"
+    >
+  </label>
+  <button
+    onclick="onButtonClick()"
+    id="convertButton"
+    class="convert-button"
+  >
+    Convert
+  </button>
+</div>
+</body>
+
+<script src="script/script.js"></script>
+</html>

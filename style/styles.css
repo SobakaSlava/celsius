@@ -1,0 +1,15 @@
+.main {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+}
+
+.input-wrapper {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.convert-button {
+  margin-bottom: 10px;
+}
