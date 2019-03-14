@@ -3,7 +3,7 @@ This is an example of tensorflow.js usage which provides you a functionlaity of 
 
 ## Demo
 
-You can check the demo on [http://deadpan-poison.surge.sh/](http://deadpan-poison.surge.sh/) or on [https://sobakaslava.github.io/celsius/](Github Pages)
+You can check the demo on [http://deadpan-poison.surge.sh/](http://deadpan-poison.surge.sh/) or on [Github Pages](https://sobakaslava.github.io/celsius/)
 
 ## Install
 
