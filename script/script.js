@@ -33,7 +33,7 @@ const onButtonClick = async () => {
   const celsiusInput = document.getElementById("celsiusInput");
   const fahrenheitInput = document.getElementById("fahrenheitInput");
   const convertButton = document.getElementById("convertButton");
-  const main = document.getElementById("main");
+  const timeTookText = document.getElementById("timeTookText");
 
   if (celsiusInput.value === '') {
     fahrenheitInput.value = 'Please enter the value above.';
@@ -50,8 +50,7 @@ const onButtonClick = async () => {
 
   const value = model.predict(tf.tensor2d([+celsiusInput.value], [1, 1])).dataSync()[0];
 
-  const timeLeft = document.createTextNode(`The training took ${(after - before) / 1000}s`);
-  main.appendChild(timeLeft);
+  timeTookText.innerText = `The training took ${(after - before) / 1000}s`;
   fahrenheitInput.value = value;
   convertButton.innerText = oldText;
   convertButton.disabled = false;
